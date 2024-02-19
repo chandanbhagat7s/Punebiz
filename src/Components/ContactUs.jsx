@@ -5,8 +5,8 @@ import React from "react";
 export default function ContactUs() {
   return (
     <>
-      <div className="bg-white my-12">
-        <div className="max-w-full mx-auto bg-[#EEE] my-4">
+      <div className="bg-white mb-12">
+        <div className="max-w-full mx-auto bg-[#EEE] mb-4">
           <div
             className="w-full h-[80vh] bg-cover bg-center mb-4"
             style={{ backgroundImage: `url(${img})` }}

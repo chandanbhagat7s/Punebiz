@@ -2,7 +2,7 @@ import { Button } from "@mui/material";
 import M2Cards from "../M2Cards";
 import Done from "./MCards";
 
-export default function Menue() {
+export default function Business() {
   return (
     <>
       <div className="flex justify-center">

@@ -11,7 +11,7 @@ import { Button } from "react-bootstrap";
 
 import { IoImages } from "react-icons/io5";
 
-export default function EditCard() {
+export default function Advertisement() {
   return (
     <>
       <div className="flex-1">

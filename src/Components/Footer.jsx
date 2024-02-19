@@ -1,4 +1,5 @@
 import { Button, Input } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -24,29 +25,32 @@ export default function Footer() {
           <h3 className="text-lg font-semibold">Quick Links</h3>
           <ul className="space-y-1">
             <li>
-              <a className="text-sm hover:text-gray-300" href="#">
+              <Link className="text-sm hover:text-gray-300" to={"/"}>
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-sm hover:text-gray-300" href="#">
+              <Link className="text-sm hover:text-gray-300" to={"/businesses"}>
                 Businesses
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-sm hover:text-gray-300" href="#">
+              <Link className="text-sm hover:text-gray-300" to={"/about"}>
                 About us
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-sm hover:text-gray-300" href="#">
+              <Link
+                className="text-sm hover:text-gray-300"
+                to={"/registerBusinesses"}
+              >
                 Register Your Business
-              </a>
+              </Link>
             </li>
             <li>
-              <a className="text-sm hover:text-gray-300" href="#">
+              <Link className="text-sm hover:text-gray-300" to={"/contactus"}>
                 Contact us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

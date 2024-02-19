@@ -10,6 +10,14 @@ export default function CreateUser() {
             <h2 className="text-center text-2xl font-bold">Create User</h2>
             <div className="mt-4 mb-8 border-b-2 border-black" />
             <form>
+              <div className="flex flex-col items-center lg:flex-row p-2 w-full mt-12">
+                <div className="lg:basis-1/4">Owner Name</div>
+                <Input
+                  placeholder="Owner Name"
+                  className="w-100 lg:w-75 bg-white rounded border-black border-1 px-2 py-1 "
+                />
+              </div>
+
               <div className="mb-6 flex lg:flex-row flex-col items-center">
                 <label
                   className="block text-sm font-medium text-black w-50 text-center"

@@ -3,57 +3,60 @@ import { FaWhatsapp } from "react-icons/fa";
 
 import { Button } from "@mui/material";
 import { Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function M2Cards() {
   return (
-    <div className="  bg-gray-200 max-w-full p-2 flex flex-col md:flex-row items-center rounded-lg justify-content-center m-2 bg-[#EEE]">
-      <div className="w-64 h-64 md:w-32 md:h-32 overflow-hidden rounded-lg mx-3">
-        <img
-          alt="Vastrani Cloth Store"
-          className="object-cover w-full h-full rounded-full"
-          height="500"
-          src="https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_640.jpg"
-          style={{
-            aspectRatio: "500/500",
-            objectFit: "cover",
-          }}
-          width="500"
-        />
-      </div>
+    <Link to={"/cardDetails"}>
+      <div className="rounded-lg max-w-full p-2 flex flex-col md:flex-row items-center justify-content-center m-2 bg-[#EEE]">
+        <div className="w-64 h-64 md:w-32 md:h-32 overflow-hidden rounded-lg mx-3">
+          <img
+            alt="Vastrani Cloth Store"
+            className="object-cover w-full h-full rounded-full"
+            height="500"
+            src="https://cdn.pixabay.com/photo/2015/04/19/08/32/rose-729509_640.jpg"
+            style={{
+              aspectRatio: "500/500",
+              objectFit: "cover",
+            }}
+            width="500"
+          />
+        </div>
 
-      <div className="flex flex-col justify-between align center lg:mr-44 sm:p-2 flex-grow md:mt-4  ">
-        <h2 className="text-lg font-semibold">Vastrani</h2>
-        <p className="text-xs text-gray-500">Cloth Store</p>
-        <p className="text-xs">Uruli Kanchan, Pune</p>
-        <p className="text-xs">Pune</p>
-      </div>
-      <div className="flex flex-col items-center lg:mx-5 justify-between ml-2 md:ml-0 mt-2 md:mt-0 w-30">
-        <div>
-          <Button className="py-1" variant="ghost my-1">
-            <HeartIcon className="text-gray-400" />
-          </Button>
+        <div className="flex flex-col justify-between align-items-start lg:align-self-start lg:ml-8 lg:mr-44 sm:p-2 lg:mt-0 flex-grow md:mt-4  ">
+          <h2 className="text-lg font-semibold py-1">Vastrani</h2>
+          <p className="text-xs text-gray-500 py-1">Cloth Store</p>
+          <p className="text-xs py-1">Uruli Kanchan, Pune</p>
+          <p className="text-xs py-1">Pune</p>
         </div>
-        <div className="flex items-center space-x-1 my-2">
-          <LinkedinIcon className="text-blue-500 m-2" />
-          <InstagramIcon className="text-pink-500 m-2" />
-          <FacebookIcon className="text-blue-600 m-2" />
+        <div className="flex flex-col items-center lg:mx-5 justify-between ml-2 md:ml-0 mt-2 md:mt-0 w-30">
+          <div>
+            <Button className="py-1" variant="ghost my-1">
+              <HeartIcon className="text-gray-400" />
+            </Button>
+          </div>
+          <div className="flex items-center space-x-1 my-2">
+            <LinkedinIcon className="text-blue-500 m-2" />
+            <InstagramIcon className="text-pink-500 m-2" />
+            <FacebookIcon className="text-blue-600 m-2" />
+          </div>
+          <button
+            // className="border py-1 px-3 my-2 border-black text-black text-xs "
+
+            // color=""
+            className="bg-transparent text-black flex align-items-center border border-black px-2 py-1 rounded"
+          >
+            <FaWhatsapp className="mr-2 text-success" /> Call Now
+          </button>
+          <a
+            className="text-xs text-blue-600 flex items-center space-x-1 my-2"
+            href="#"
+          >
+            <CiGlobe className="mx-2" /> https://xyz.zz.in/
+          </a>
         </div>
-        <Button
-          // className="border py-1 px-3 my-2 border-black text-black text-xs "
-          // variant="outline"
-          variant="contained"
-          color="success"
-        >
-          <FaWhatsapp className="mx-2" /> Call Now
-        </Button>
-        <a
-          className="text-xs text-blue-600 flex items-center space-x-1 my-2"
-          href="#"
-        >
-          <CiGlobe className="mx-2" /> https://xyz.zz.in/
-        </a>
       </div>
-    </div>
+    </Link>
   );
 }
 

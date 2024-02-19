@@ -1,6 +1,6 @@
 import img from "./../assets/contact.png";
 
-export default function Component() {
+export default function About() {
   return (
     <>
       <div className="max-w-full mx-auto ">

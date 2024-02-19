@@ -3,16 +3,14 @@
 // import { CardTitle, CardHeader, CardContent, Card } from "@/components/ui/card"
 // import { ResponsiveBar } from "@nivo/bar"
 
-import { Avatar, Card, CardContent, CardHeader, Link } from "@mui/material";
+import { Avatar, Card, CardContent, CardHeader } from "@mui/material";
 import { Button, CardTitle, Image } from "react-bootstrap";
 import { FaBuildingColumns } from "react-icons/fa6";
 import Charts from "./Chart";
 import AdminSub from "./AdminSub";
 import AdminMain from "./AdminMain";
-import BasicTable from "./TableB";
-import T from "./T";
-import EditCard from "./EditCards";
-import CreateUser from "./CreateUser";
+
+import { Link } from "react-router-dom";
 
 export default function AdminDash() {
   return (
@@ -32,7 +30,7 @@ export default function AdminDash() {
             <li>
               <Link
                 className="flex items-center px-4 py-2 text-sm hover:bg-gray-700 hover:text-white"
-                href="#"
+                href="/admin/home"
                 style={{
                   textDecoration: "none",
                 }}
@@ -48,7 +46,7 @@ export default function AdminDash() {
                 style={{
                   textDecoration: "none",
                 }}
-                href="#"
+                to="/admin/businesses"
               >
                 <BuildingIcon className="mr-3 h-5 w-5" />
                 Businesses{"\n                      "}
@@ -60,7 +58,7 @@ export default function AdminDash() {
                 style={{
                   textDecoration: "none",
                 }}
-                href="#"
+                to="/admin/subscription"
               >
                 <CreditCardIcon className="mr-3 h-5 w-5" />
                 Subscription{"\n                      "}
@@ -72,7 +70,7 @@ export default function AdminDash() {
                 style={{
                   textDecoration: "none",
                 }}
-                href="#"
+                to={"/admin/advertisement"}
               >
                 <MegaphoneIcon className="mr-3 h-5 w-5" />
                 Advertisement{"\n                      "}
@@ -84,7 +82,7 @@ export default function AdminDash() {
                 style={{
                   textDecoration: "none",
                 }}
-                href="#"
+                to="/admin/users"
               >
                 <UsersIcon className="mr-3 h-5 w-5" />
                 Users{"\n                      "}
@@ -108,8 +106,8 @@ export default function AdminDash() {
       {/* <AdminSub /> */}
       {/* <T /> */}
       {/* <EditCard /> */}
-      {/* <AdminMain /> */}
-      <CreateUser />
+      <AdminMain />
+      {/* <CreateUser /> */}
     </div>
   );
 }

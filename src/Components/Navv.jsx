@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Component from "./NavBar";
 import logoImg from "./../assets/logo.png";
 import { Hidden } from "@mui/material";
+import { Link } from "react-router-dom";
 
 export default function Navv() {
   const [hidden, setHidden] = useState(false);
@@ -57,16 +58,16 @@ export default function Navv() {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start ">
               <div className="flex flex-shrink-0 items-center lg:hidden md:hidden">
-                <img className="h-8 w-auto" src={logoImg} alt="Your Company" />
+                <img className=" w-auto" src={logoImg} alt="Your Company" />
               </div>
               <div className="hidden sm:ml-6 sm:block sm:w-full">
                 <div className="container mx-auto flex items-center justify-between ">
                   <div className="flex items-center space-x-8">
                     <button className="text-white text-sm font-medium hover:border rounded-full px-2 py-1">
-                      Home
+                      <Link to={"/"}>Home</Link>
                     </button>
                     <button className="text-white text-sm font-medium hover:text-gray-300 hover:border rounded-full px-2 py-1">
-                      Businesses
+                      <Link to={"/businesses"}>Businesses</Link>
                     </button>
                   </div>
                   <div className="flex-shrink-0 flex items-center">
@@ -85,10 +86,10 @@ export default function Navv() {
                   </div>
                   <div className="flex items-center space-x-4">
                     <button className="text-white hover:border rounded-full px-2 py-1 ">
-                      Register Business
+                      <Link to={"/registerBusinesses"}>Register Business</Link>
                     </button>
                     <button className="bg-white text-black text-sm py-2 px-4 rounded-full">
-                      Login
+                      <Link to={"/login"}>Login</Link>
                     </button>
                   </div>
                 </div>
@@ -99,31 +100,31 @@ export default function Navv() {
 
         <div className="sm:hidden" id="mobile-menu">
           <div className={`space-y-1 px-2 pb-3 pt-2 ${hidden ? "" : "hidden"}`}>
-            <a
-              href="#"
+            <Link
+              to={"/"}
               className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
               aria-current="page"
             >
               Home
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to={"/businesses"}
               className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
             >
               Businesses
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to={"/registerBusinesses"}
               className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
             >
               Register Business
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              to={"/login"}
               className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
             >
               Login
-            </a>
+            </Link>
           </div>
         </div>
       </nav>

@@ -2,7 +2,7 @@ import React from "react";
 import BasicTable from "./TableB";
 import { Button } from "@mui/material";
 
-export default function T() {
+export default function Users() {
   return (
     <>
       <div className="flex-1">
