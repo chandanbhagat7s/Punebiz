@@ -12,6 +12,16 @@ import AdminDash from "./Components/Admin/AdminDash";
 import Advertisement from "./Components/Admin/EditCards";
 import Users from "./Components/Admin/Users";
 import AdminSub from "./Components/Admin/AdminSub";
+import Navi from "./Components/Change/Navi";
+import CategoriNew from "./Components/Change/Categories";
+import CrawNew from "./Components/Change/CrawNew";
+import Register from "./Components/Register";
+import Cardd from "./Components/Change/Cardd";
+import Footer from "./Components/Footer";
+import PageNotFound from "./Pages/PageNotFound";
+import Type from "./Components/Change/Type";
+import NewCards from "./Components/Change/NewCards";
+import Services from "./Components/Change/Service";
 
 function App() {
   return (
@@ -24,8 +34,7 @@ function App() {
       {/* <About />
       <Subscription /> */}
       {/* <AdminDash /> */}
-
-      <Routes>
+      {/* <Routes>
         <Route
           path="/"
           element={
@@ -137,7 +146,27 @@ function App() {
             </>
           }
         ></Route>
-      </Routes>
+      </Routes> */}
+      <div className="lg:mb-20  mb-60">
+        <Navi />
+      </div>
+      <div className="hidden lg:block">
+        <CategoriNew />
+      </div>
+      <CrawNew />
+      <div className="block lg:hidden">
+        <CategoriNew />
+      </div>
+      {/* <Register /> */}
+
+      <NewCards />
+      <Services />
+      <div className="my-4">
+        <Cardd />
+      </div>
+
+      {/* <PageNotFound /> */}
+      <Footer />
     </>
   );
 }
