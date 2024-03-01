@@ -15,7 +15,7 @@ export default function Services() {
     >
       <h2 className="text-3xl font-bold text-center mb-8">Daily Services</h2>
 
-      <div className="flex flex-col lg:flex-row justify-content-around m-auto">
+      <div className="flex flex-col lg:flex-row justify-content-around align-items-center m-auto">
         <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 lg:blur-none blur-sm hover:blur-none hover:z-[100]">
           <a href="#">
             <img

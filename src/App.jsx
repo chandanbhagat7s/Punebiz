@@ -22,6 +22,7 @@ import PageNotFound from "./Pages/PageNotFound";
 import Type from "./Components/Change/Type";
 import NewCards from "./Components/Change/NewCards";
 import Services from "./Components/Change/Service";
+import AboutNew from "./Components/Change/NewAbout";
 
 function App() {
   return (
@@ -34,13 +35,30 @@ function App() {
       {/* <About />
       <Subscription /> */}
       {/* <AdminDash /> */}
-      {/* <Routes>
+      <Routes>
         <Route
           path="/"
           element={
             <>
               <MainOut>
-                <Home />
+                {/* <Home /> */}
+
+                <div className="lg:mb-20  mb-60">
+                  <Navi />
+                </div>
+                <div className="hidden lg:block">
+                  <CategoriNew />
+                </div>
+                <CrawNew />
+                <div className="block lg:hidden">
+                  <CategoriNew />
+                </div>
+
+                <NewCards />
+                <Services />
+                <div className="my-4">
+                  <Cardd />
+                </div>
               </MainOut>
             </>
           }
@@ -80,7 +98,8 @@ function App() {
           element={
             <>
               <MainOut>
-                <About />
+                {/* <About /> */}
+                <AboutNew />
               </MainOut>
             </>
           }
@@ -146,8 +165,8 @@ function App() {
             </>
           }
         ></Route>
-      </Routes> */}
-      <div className="lg:mb-20  mb-60">
+      </Routes>
+      {/* <div className="lg:mb-20  mb-60">
         <Navi />
       </div>
       <div className="hidden lg:block">
@@ -157,7 +176,6 @@ function App() {
       <div className="block lg:hidden">
         <CategoriNew />
       </div>
-      {/* <Register /> */}
 
       <NewCards />
       <Services />
@@ -165,8 +183,11 @@ function App() {
         <Cardd />
       </div>
 
+      <Footer /> */}
+
+      {/* <Register /> */}
       {/* <PageNotFound /> */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

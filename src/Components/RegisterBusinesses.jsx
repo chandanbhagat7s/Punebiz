@@ -7,55 +7,75 @@
 import { Button, Input, TextareaAutosize } from "@mui/material";
 import { CiInstagram } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
+import Type from "./Change/Type";
 
 export default function RegisterBusinesses() {
   return (
-    <div className="max-w-4xl mx-auto p-12 border rounded bg-[#EEE] my-12">
-      <h1 className="text-3xl font-bold text-center mb-12">
-        Business Registration Form
+    <div className="max-w-4xl mx-auto p-12  rounded bg-gradient-to-r from-white via-blue-100 to-blue-50 my-12 border-y-4 border-sky-700">
+      <h1 className="text-4xl font-bold text-center mb-12 uppercase tracking-wider bg-gradient-to-r from-blue-700 to-black bg-clip-text text-transparent">
+        <Type
+          text={"Business Registration Form"}
+          classs={
+            "tracking-wider bg-gradient-to-r from-blue-700 to-black bg-clip-text text-transparent"
+          }
+          size={"text-4xl"}
+          itteration={1}
+        ></Type>
       </h1>
-      <div className="border-t-2 border-black p-2 mb-12">
+      <div className="border-t-2 border-blue-900 p-2 mb-12">
         <form className="space-y-4">
           <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-12">
-            <div className="lg:basis-1/4">Owner Name</div>
+            <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+              Owner Name
+            </div>
             <Input
               placeholder="Owner Name"
-              className="w-100 lg:w-75 bg-white rounded border-black border-1 px-2 py-1 "
+              className="w-100 lg:w-75 bg-white rounded  px-2 py-1 "
             />
           </div>
           <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-12 ">
-            <div className="lg:basis-1/4">Business Name</div>
+            <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+              Business Name
+            </div>
             <Input
               placeholder="Business Name"
-              className="w-100 lg:w-75 bg-white rounded border-black border-1 px-2 py-1"
+              className="w-100 lg:w-75 bg-white rounded  px-2 py-1"
             />
           </div>
           <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-12 ">
-            <div className="lg:basis-1/4 ">Email</div>
+            <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold ">
+              Email
+            </div>
             <Input
               placeholder="Email"
               type="email"
-              className="w-100 lg:w-75 bg-white rounded border-black border-1 px-2 py-1"
+              className="w-100 lg:w-75 bg-white rounded  px-2 py-1"
             />
           </div>
           <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-12 ">
-            <div className="lg:basis-1/4 ">Whatsapp Number</div>
+            <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold ">
+              Whatsapp Number
+            </div>
             <Input
               placeholder="Whatsapp Number"
-              className="w-100 lg:w-75 bg-white rounded border-black border-1 px-2 py-1"
+              className="w-100 lg:w-75 bg-white rounded  px-2 py-1"
             />
           </div>
           <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-12 ">
-            <div className="lg:basis-1/4">Address</div>
+            <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+              Address
+            </div>
             <Input
               placeholder="Address"
-              className="w-100 lg:w-75 bg-white rounded border-black border-1 px-2 py-1"
+              className="w-100 lg:w-75 bg-white rounded  px-2 py-1"
             />
           </div>
 
           <div className="flex flex-col ">
             <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-1">
-              <div className="lg:basis-1/4">City</div>
+              <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+                City
+              </div>
               <div>
                 <select className="form-select">
                   <option selected> select city</option>
@@ -66,7 +86,9 @@ export default function RegisterBusinesses() {
               </div>
             </div>
             <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-8">
-              <div className="lg:basis-1/4">Business Category</div>
+              <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+                Business Category
+              </div>
               <div>
                 <select className="form-select">
                   <option selected>Business Category</option>
@@ -77,7 +99,9 @@ export default function RegisterBusinesses() {
               </div>
             </div>
             <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-8">
-              <div className="lg:basis-1/4">Business sub Category</div>
+              <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+                Business sub Category
+              </div>
               <div>
                 <select className="form-select">
                   <option selected>select Business sub Category</option>
@@ -90,7 +114,9 @@ export default function RegisterBusinesses() {
           </div>
 
           <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-12 ">
-            <div className="lg:basis-1/4">Upload Profile Photo</div>
+            <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+              Upload Profile Photo
+            </div>
             <div className="mb-2">
               <Input type="file" placeholder="Upload Photo/Videos" />
             </div>
@@ -99,7 +125,9 @@ export default function RegisterBusinesses() {
             </Button>
           </div>
           <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-12 ">
-            <div className="lg:basis-1/4">Upload Photo/videos</div>
+            <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+              Upload Photo/videos
+            </div>
             <div className="mb-2">
               <Input type="file" placeholder="Upload Photo/Videos" />
             </div>
@@ -144,7 +172,10 @@ export default function RegisterBusinesses() {
             </div>
           </div>
           <div className="flex flex-col items-center lg:flex-row p-2 w-100 mt-12">
-            <div className="lg:basis-1/4"> Enter Description</div>
+            <div className="lg:basis-1/4 lg:mb-0 mb-2 font-semibold">
+              {" "}
+              Enter Description
+            </div>
             <textarea
               cols={50}
               rows={4}
@@ -154,7 +185,10 @@ export default function RegisterBusinesses() {
           </div>
 
           <div className="flex justify-content-center my-4">
-            <Button variant="outline" className="bg-dark text-white mx-2 ">
+            <Button
+              variant="outline"
+              className="bg-primary text-white mx-2 px-5 py-2 "
+            >
               Submit
             </Button>
           </div>

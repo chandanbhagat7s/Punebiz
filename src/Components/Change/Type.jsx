@@ -1,6 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 
-export default function Type({ text, color, size }) {
+export default function Type({ text, color, size, classs, itteration }) {
   return (
     <TypeAnimation
       sequence={[
@@ -12,12 +12,12 @@ export default function Type({ text, color, size }) {
       ]}
       wrapper="span"
       speed={50}
-      className={`text-xl text-bold lg:${size || "text-xl"}`}
+      className={`text-xl text-bold ${classs} lg:${size || "text-xl"}`}
       style={{
         display: "inline-block",
-        color: color || "black",
+        color: !classs ? color || "black" : "",
       }}
-      repeat={Infinity}
+      repeat={itteration || Infinity}
     />
   );
 }

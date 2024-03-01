@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 export default function M2Cards() {
   return (
     <Link to={"/cardDetails"}>
-      <div className="rounded-lg max-w-full p-2 flex flex-col md:flex-row items-center justify-content-center m-2 bg-[#EEE]">
+      <div className="rounded-lg max-w-full p-2 flex flex-col md:flex-row items-center justify-content-center m-2 bg-sky-100 border-blue-700">
         <div className="w-64 h-64 md:w-32 md:h-32 overflow-hidden rounded-lg mx-3">
           <img
             alt="Vastrani Cloth Store"
@@ -31,22 +31,22 @@ export default function M2Cards() {
         </div>
         <div className="flex flex-col items-center lg:mx-5 justify-between ml-2 md:ml-0 mt-2 md:mt-0 w-30">
           <div>
-            <Button className="py-1" variant="ghost my-1">
-              <HeartIcon className="text-gray-400" />
-            </Button>
+            {/* <Button className="py-1" variant="ghost my-1"> */}
+            <HeartIcon className="hover:text-red-700 text-gray-400 hover:scale-150" />
+            {/* </Button> */}
           </div>
           <div className="flex items-center space-x-1 my-2">
-            <LinkedinIcon className="text-blue-500 m-2" />
-            <InstagramIcon className="text-pink-500 m-2" />
-            <FacebookIcon className="text-blue-600 m-2" />
+            <LinkedinIcon className="text-blue-500 m-2 hover:scale-150" />
+            <InstagramIcon className="text-pink-500 m-2 hover:scale-150" />
+            <FacebookIcon className="text-blue-600 m-2 hover:scale-150" />
           </div>
           <button
             // className="border py-1 px-3 my-2 border-black text-black text-xs "
 
             // color=""
-            className="bg-transparent text-black flex align-items-center border border-black px-2 py-1 rounded"
+            className="bg-cyan-700 text-white flex align-items-center  px-2 py-1 rounded hover:scale-105"
           >
-            <FaWhatsapp className="mr-2 text-success" /> Call Now
+            <FaWhatsapp className="mr-2 text-white" /> Call Now
           </button>
           <a
             className="text-xs text-blue-600 flex items-center space-x-1 my-2"
